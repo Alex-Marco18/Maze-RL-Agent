@@ -27,24 +27,18 @@ The project was advanced into a small Stealth Game where a controlled agent (the
 
 The central AI challenge is to train the bot to survive in the dynamic maze environment.
 
-State Representation
-
+**State Representation**
 The bot's state is simplified to be manageable for tabular Q-Learning. The state includes:
 
 The bot's current (x, y) cell coordinates.
 
 The presence and encoded relative position of nearby environmental elements (e.g., walls, nearest loot, guard visibility).
 
-Actions
-
+**Actions**
 The agent has four possible actions in the game grid:
-
 0: Up
-
 1: Right
-
 2: Down
-
 3: Left
 
 ### Reward Structure
@@ -69,11 +63,16 @@ Epsilon ($\epsilon$): Controls the trade-off between exploration (trying random 
 
 ## 📦 File Breakdown
 
-| File | Description |
-| main.py | (Legacy CLI) Solves static mazes using classic algorithms. |
-| maze_gen.py | Generates the maze structure. |
-| search_algorithm.py | Implements BFS, DFS, and A* search (used by guards in the game). |
-| game_lr.py | The main game application and RL training loop. |
-| rl_agent.py | The class defining the Q-Learning algorithm and agent behavior. |
-| qtable.pkl | Saved model weights (the Q-Table). |
-| requirements.txt | (Assumed) List of necessary Python packages (e.g., pygame, numpy). |
+| **File** | **Description** | <br>
+| main.py | (Legacy CLI) Solves static mazes using classic algorithms. | <br>
+| maze_gen.py | Generates the maze structure. | <br>
+| search_algorithm.py | Implements BFS, DFS, and A* search | <br>
+
+<br> <br>
+This is the File for the game agent <br>
+| game_lr.py | The main game application and RL training loop. | <br>
+| rl_agent.py | The class defining the Q-Learning algorithm and agent behavior. | <br>
+| maze_generator.py| For Generating Environment|<br>
+search+algorithms.py | Implemented A* for search |<br>
+| qtable.pkl | Saved model weights (the Q-Table). |<br>
+| requirements.txt | (Assumed) List of necessary Python packages (e.g., pygame, numpy). | <br>
