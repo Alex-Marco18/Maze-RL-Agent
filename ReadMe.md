@@ -76,3 +76,8 @@ This is the File for the game agent <br>
 search+algorithms.py | Implemented A* for search |<br>
 | qtable.pkl | Saved model weights (the Q-Table). |<br>
 | requirements.txt | (Assumed) List of necessary Python packages (e.g., pygame, numpy). | <br>
+
+<br>
+Note: <br>
+Originally i use the Maze Solver to implemimplement the search Algorithm DFS BFS A* Search, when i found out that it was really good and amazing i decided to go further and did it in a game like style. <br>
+Why do you think i used the name **Rob Bob?** <br>
